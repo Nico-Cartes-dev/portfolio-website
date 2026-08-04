@@ -36,7 +36,7 @@ export function HeroSection() {
     >
       <p className="mb-4 font-mono text-sm text-primary">{'> _ desarrollador full stack'}</p>
       <h1 className="text-balance text-4xl font-bold tracking-tight sm:text-6xl">
-        Nicolás Anakin Cartes González
+        Nicolás Cartes González
       </h1>
       <p className="mt-3 text-lg font-medium text-primary">
         Desarrollador Full Stack | Estudiante de Ingeniería Informática
