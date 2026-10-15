@@ -4,13 +4,14 @@ import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Mail } from 'lucide-react'
 import { GithubIcon, LinkedinIcon } from '@/components/brand-icons'
+import { CONTACT_EMAIL, LINKEDIN_URL } from '@/lib/contact'
 
 export function ContactSection() {
   const [copied, setCopied] = useState(false)
 
   const handleCopy = async () => {
     try {
-      await navigator.clipboard.writeText('nicolas.cartesg@gmail.com')
+      await navigator.clipboard.writeText(CONTACT_EMAIL)
       setCopied(true)
       setTimeout(() => setCopied(false), 1500)
     } catch {
@@ -37,7 +38,7 @@ export function ContactSection() {
             className="inline-flex items-center gap-2 rounded-md border border-border bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent"
           >
             <Mail className="h-4 w-4" aria-hidden="true" />
-            {copied ? 'Correo copiado' : 'nicolas.cartesg@gmail.com'}
+            {copied ? 'Correo copiado' : CONTACT_EMAIL}
           </button>
           <Button
             nativeButton={false}
@@ -50,7 +51,7 @@ export function ContactSection() {
           <Button
             nativeButton={false}
             variant="outline"
-            render={<a href="https://www.linkedin.com/in/nicolas-cartes-gonzalez-601a31292/" />}
+            render={<a href={LINKEDIN_URL} target="_blank" rel="noreferrer" />}
           >
             <LinkedinIcon className="h-4 w-4" />
             LinkedIn

@@ -1,4 +1,5 @@
 import { ExternalLink } from 'lucide-react'
+import Image from 'next/image'
 import { GithubIcon } from '@/components/brand-icons'
 import { projects } from '@/lib/projects'
 
@@ -43,6 +44,15 @@ export function ProjectsSection() {
                 ) : null}
               </div>
             </div>
+            {project.imageUrl ? (
+              <Image
+                src={project.imageUrl}
+                alt="Detecciones de productos y nivel de góndola analizados por Shelf Monitor"
+                width={990}
+                height={760}
+                className="mt-4 h-auto w-full rounded-md border border-border"
+              />
+            ) : null}
             <p className="mt-3 flex-1 text-pretty text-sm leading-relaxed text-muted-foreground">
               {project.description}
             </p>

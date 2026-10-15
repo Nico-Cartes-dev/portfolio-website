@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server'
+import { CONTACT_EMAIL } from '@/lib/contact'
 
 export async function POST(request: Request) {
   try {
@@ -14,7 +15,7 @@ export async function POST(request: Request) {
     return NextResponse.json({
       success: true,
       message: 'El formulario está listo para enviarse desde tu cliente de correo.',
-      mailto: `mailto:nicolas.cartesg@gmail.com?subject=${encodeURIComponent(`Nuevo mensaje de ${name}`)}&body=${encodeURIComponent(`Nombre: ${name}\nCorreo: ${email}\n\nMensaje:\n${message}`)}`,
+      mailto: `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(`Nuevo mensaje de ${name}`)}&body=${encodeURIComponent(`Nombre: ${name}\nCorreo: ${email}\n\nMensaje:\n${message}`)}`,
     })
   } catch (error) {
     return NextResponse.json(

@@ -2,8 +2,9 @@
 
 import { useEffect, useState } from 'react'
 import { Button } from '@/components/ui/button'
-import { ArrowRight, Mail } from 'lucide-react'
+import { ArrowRight, Download, FileText, Mail } from 'lucide-react'
 import { GithubIcon, LinkedinIcon } from '@/components/brand-icons'
+import { CONTACT_EMAIL, CV_URL, LINKEDIN_URL } from '@/lib/contact'
 
 export function HeroSection() {
   const [scrollProgress, setScrollProgress] = useState(0)
@@ -55,6 +56,22 @@ export function HeroSection() {
         <Button nativeButton={false} variant="outline" render={<a href="#contact" />}>
           Contáctame
         </Button>
+        <Button
+          nativeButton={false}
+          variant="outline"
+          render={<a href={CV_URL} target="_blank" rel="noreferrer" />}
+        >
+          <FileText className="h-4 w-4" aria-hidden="true" />
+          Ver CV
+        </Button>
+        <Button
+          nativeButton={false}
+          variant="outline"
+          render={<a href={CV_URL} download="CV-Nicolas-Cartes-Gonzalez.pdf" />}
+        >
+          <Download className="h-4 w-4" aria-hidden="true" />
+          Descargar CV
+        </Button>
       </div>
 
       <div className="mt-8 flex items-center gap-4">
@@ -66,14 +83,16 @@ export function HeroSection() {
           <GithubIcon className="h-5 w-5" />
         </a>
         <a
-          href="https://www.linkedin.com/"
+          href={LINKEDIN_URL}
           aria-label="LinkedIn"
           className="text-muted-foreground transition-colors hover:text-primary"
+          target="_blank"
+          rel="noreferrer"
         >
           <LinkedinIcon className="h-5 w-5" />
         </a>
         <a
-          href="mailto:nicolascartes90@gmail.com"
+          href={`mailto:${CONTACT_EMAIL}`}
           aria-label="Email"
           className="text-muted-foreground transition-colors hover:text-primary"
         >

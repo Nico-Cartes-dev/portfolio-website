@@ -6,6 +6,7 @@ export type Project = {
   liveUrl: string
   /** Source code URL. Leave as "" to hide the link. */
   repoUrl: string
+  imageUrl?: string
 }
 
 /**
@@ -44,6 +45,7 @@ export const projects: Project[] = [
     tags: ['Python', 'YOLOv8', 'OpenCV', 'PyTorch', 'Computer Vision', 'Forecasting'],
     liveUrl: '',
     repoUrl: 'https://github.com/Nico-Cartes-dev/tesis',
+    imageUrl: '/shelf-monitor-detections.png',
   },
   {
   title: 'Bot de Discord con ChatGPT',
@@ -56,7 +58,7 @@ export const projects: Project[] = [
   {
   title: 'Proyecto de Minería de Datos: Impacto de la IA en el Mercado Laboral (2010–2025)',
   description:
-    'Análisis de minería de datos desarrollado en Jupyter Notebook sobre [dataset/tema]. Incluye [limpieza y exploración de datos / ingeniería de características / entrenamiento y evaluación de modelos de clasificación o regresión], con resultados evaluados mediante [métricas, ej. F1-score] y visualizaciones para interpretar los hallazgos.',
+    'Análisis de minería de datos desarrollado en Jupyter Notebook sobre el impacto de la inteligencia artificial en el mercado laboral. Incluye limpieza y exploración de datos / ingeniería de características / entrenamiento y evaluación de modelos de clasificación o regresión, con resultados evaluados mediante métricas, ej. F1-score y visualizaciones para interpretar los hallazgos.',
   tags: ['Python', 'Jupyter Notebook', 'Pandas', 'Scikit-learn'],
   liveUrl: '',
   repoUrl: 'https://github.com/Nico-Cartes-dev/mineria-datos',
