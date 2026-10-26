@@ -24,10 +24,11 @@ export function ContactSection() {
       <div className="rounded-lg border border-border bg-card p-8 sm:p-12">
         <p className="font-mono text-sm text-primary">{'// contacto'}</p>
         <h2 className="mt-3 text-balance text-3xl font-bold tracking-tight sm:text-4xl">
-          Construyamos algo juntos
+          Hablemos
         </h2>
         <p className="mt-4 max-w-lg text-pretty leading-relaxed text-muted-foreground">
-          Si tienes un proyecto en mente o simplemente quieres conversar, estaré
+          Estoy buscando práctica profesional y disponible de inmediato.
+          Si tienes una oportunidad o simplemente quieres conversar, estaré
           feliz de conectar.
         </p>
 

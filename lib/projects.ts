@@ -17,7 +17,7 @@ export const projects: Project[] = [
 {
   title: 'Sistema de Gestión para Taller de Bicicletas',
   description:
-    'Solución comercial que digitalizó la atención del taller, permitiendo gestionar clientes, órdenes de trabajo e inventario de forma centralizada y eficiente. Software propietario de código cerrado, desarrollado para su venta.',
+    'Desarrollo freelance (ene–mar 2026) para un cliente real. Desarrollé a medida, como producto comercial, un sistema de gestión que reemplazó la atención en papel del taller: clientes, órdenes de trabajo e inventario en un solo lugar. Aplicación de escritorio en uso real; según el cliente, redujo el uso de papel en más de un 50 %. Tecnologías: Electron, React, Flask, SQLite.',
   tags: ['Electron', 'React', 'Flask', 'SQLite'],
   liveUrl: '',
   repoUrl: '',
@@ -25,7 +25,7 @@ export const projects: Project[] = [
   {
     title: 'Bot para Recursos Humanos – Verisure',
     description:
-      'Automatización de procesos de RRHH mediante Microsoft 365, Copilot y Power BI.',
+      'Proyecto de vinculación con el medio (CITT Duoc UC, mar–may 2024). Desarrollé de forma individual un bot de Recursos Humanos que automatizó un proceso que antes tomaba varias horas: el bot responde las preguntas frecuentes de los colaboradores de Verisure. Tecnologías: Microsoft 365, Copilot y Power BI.',
     tags: ['Microsoft 365', 'Copilot', 'Power BI', 'Automatización'],
     liveUrl: '',
     repoUrl: '',
@@ -58,8 +58,8 @@ export const projects: Project[] = [
   {
   title: 'Proyecto de Minería de Datos: Impacto de la IA en el Mercado Laboral (2010–2025)',
   description:
-    'Análisis de minería de datos desarrollado en Jupyter Notebook sobre el impacto de la inteligencia artificial en el mercado laboral. Incluye limpieza y exploración de datos / ingeniería de características / entrenamiento y evaluación de modelos de clasificación o regresión, con resultados evaluados mediante métricas, ej. F1-score y visualizaciones para interpretar los hallazgos.',
-  tags: ['Python', 'Jupyter Notebook', 'Pandas', 'Scikit-learn'],
+    'Análisis de minería de datos en Jupyter Notebook sobre un dataset de Kaggle con 5.000 ofertas laborales (2010–2025) y 22 variables sobre salarios, intensidad de uso de IA y riesgo de automatización. Incluye limpieza y exploración de datos, codificación y escalamiento de variables, y el entrenamiento de modelos de clasificación (Random Forest, Árbol de Decisión, Regresión Logística) y regresión lineal, evaluados con F1-score, ROC-AUC, MAE y R². Los modelos supervisados mostraron un poder predictivo limitado, lo que permitió analizar los límites de las variables disponibles. El clustering K-Means (silhouette 0.58) segmentó el mercado en tres grupos: empleos en riesgo, en transición digital e impulsados por IA.',
+  tags: ['Python', 'Jupyter Notebook', 'Pandas', 'Scikit-learn', 'K-Means', 'Random Forest'],
   liveUrl: '',
   repoUrl: 'https://github.com/Nico-Cartes-dev/mineria-datos',
   },
